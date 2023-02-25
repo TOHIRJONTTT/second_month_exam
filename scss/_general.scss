@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans";
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgba(51, 50, 61, 0.8);
+  background-color: #fafafa;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+// ---heading styles---
+
+h2,
+h3,
+h4 {
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  color: #33323d;
+  letter-spacing: -0.357143px;
+}

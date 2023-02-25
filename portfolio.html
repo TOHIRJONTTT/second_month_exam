@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="portfolio_header">
+      <div class="container">
+        <a class="header__logo" href="#">
+          <img
+            style="display: block"
+            width="60"
+            height="32"
+            src="./images/header_logo.svg"
+            alt="Logo image"
+        /></a>
+
+        <button class="header__button">
+          <img
+            src="./images/hamburger.png"
+            width="24"
+            height="13"
+            alt="Hamburger image"
+          />
+        </button>
+
+        <ul class="header__nav">
+          <li class="header__nav_link">
+            <a href="./index.html" target="_blank">home</a>
+          </li>
+          <li class="header__nav_link">
+            <a href="#" target="_self">portfolio</a>
+          </li>
+          <li class="header__nav_link">
+            <a href="#contact_me" target="_self">contact me</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <ul class="portfolio__list">
+            <li class="portfolio__item item1">
+              <picture class="portfolio__item_picture">
+                <source
+                  media="(max-width: 768px), (min-width: 376px)"
+                  srcset="./images/manage_medium_2x.jpeg"
+                />
+                <source
+                  media="(max-width: 375px)"
+                  srcset="./images/manage_small_2x.jpg"
+                />
+
+                <img
+                  width="540"
+                  height="500"
+                  class="portfolio__item_image"
+                  src="./images/manage_large_2x.jpg"
+                  alt="project image"
+                />
+              </picture>
+              <div class="portfolio__item_description">
+                <h2 class="portfolio__item_heading">Manage</h2>
+                <p class="portfolio__item_text">
+                  This project required me to build a fully responsive landing
+                  page to the designs provided. I used HTML5, along with CSS
+                  Grid and JavaScript for the areas that required interactivity,
+                  such as the testimonial slider.
+                </p>
+                <a class="portfolio__item_link" href="#">
+                  <button class="portfolio__item_btn">view project</button>
+                </a>
+              </div>
+            </li>
+
+            <li class="portfolio__item item2">
+              <picture class="portfolio__item_picture">
+                <source
+                  media="(max-width:768px), (min-width:376px)"
+                  srcset="./images/bookmark_medium_2x.jpg"
+                />
+                <source
+                  media="(max-width:375px)"
+                  srcset="./images/bookmark_small_2x.png"
+                />
+                <img
+                  width="540"
+                  height="500"
+                  class="portfolio__item_image"
+                  src="./images/bookmark_large_2x.jpg"
+                  alt="project image"
+                />
+              </picture>
+              <div class="portfolio__item_description">
+                <h2 class="portfolio__item_heading">Bookmark</h2>
+                <p class="portfolio__item_text">
+                  This project required me to build a fully responsive landing
+                  page to the designs provided. I used HTML5, along with CSS
+                  Grid and JavaScript for the areas that required interactivity,
+                  such as the features section.
+                </p>
+                <a class="portfolio__item_link" href="#">
+                  <button class="portfolio__item_btn">view project</button>
+                </a>
+              </div>
+            </li>
+
+            <li class="portfolio__item item3">
+              <picture class="portfolio__item_picture">
+                <source
+                  media="(max-width:768px), (min-width:376px)"
+                  srcset="./images/insure_medium_2x.jpg"
+                />
+                <source
+                  media="(max-width:375px)"
+                  srcset="./images/insure_small_2x.jpg"
+                />
+                <img
+                  width="540"
+                  height="500"
+                  class="portfolio__item_image"
+                  src="./images/insure_large_2x.jpg"
+                  alt="project image"
+                />
+              </picture>
+              <div class="portfolio__item_description">
+                <h2 class="portfolio__item_heading">Insure</h2>
+                <p class="portfolio__item_text">
+                  This was a small project which mostly consisted of HTML and
+                  CSS. I built a fully-responsive landing page. The only
+                  JavaScript this project required was to enable the toggling of
+                  the mobile navigation.
+                </p>
+                <a class="portfolio__item_link" href="#">
+                  <button class="portfolio__item_btn">view project</button>
+                </a>
+              </div>
+            </li>
+
+            <li class="portfolio__item item4">
+              <picture class="portfolio__item_picture">
+                <source
+                  media="(max-width:768px), (min-width:376px)"
+                  srcset="./images/fylo_medium_2x.jpg"
+                />
+                <source
+                  media="(max-width:375px)"
+                  srcset="./images/fylo_small_2x.jpg"
+                />
+                <img
+                  width="540"
+                  height="500"
+                  class="portfolio__item_image"
+                  src="./images/fylo_large_2x.jpg"
+                  alt="project image"
+                />
+              </picture>
+              <div class="portfolio__item_description">
+                <h2 class="portfolio__item_heading">Fylo</h2>
+                <p class="portfolio__item_text">
+                  This project was built in pure HTML and CSS. I had mobile and
+                  desktop designs to work to and built it so that it was
+                  fully-responsive. I took a mobile-first approach and used
+                  modern CSS like Flexbox and Grid for layout purposes.
+                </p>
+                <a class="portfolio__item_link" href="#">
+                  <button class="portfolio__item_btn">view project</button>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portfolio__interested">
+        <div class="container">
+          <div class="interested__heading_wrapper">
+            <h2 class="interested__heading">
+              Interested in doing a project together?
+            </h2>
+          </div>
+
+          <div class="interested__line"></div>
+          <a class="interested__link" href="#contact_me">
+            <button class="interested_btn">contact me</button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact_me" class="portfolio_footer">
+      <div class="container">
+        <div class="footer__nav">
+          <a class="footer__nav_logo" href="#"
+            ><img
+              style="display: block"
+              width="61"
+              height="32"
+              src="./images/footer_logo.svg"
+              alt="footer logo"
+          /></a>
+          <ul class="footer__nav_list">
+            <li class="footer__nav_link">
+              <a href="./index.html" target="_blank">home</a>
+            </li>
+            <li class="footer__nav_link">
+              <a href="#" target="_self">portfolio</a>
+            </li>
+            <li class="footer__nav_link">
+              <a href="#contact_me" target="_self">contact me</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer__social">
+          <li class="footer__social_link">
+            <a href="https://github.com" target="_blank">
+              <img
+                class="footer__github"
+                width="25"
+                height="24"
+                src="./images/github_logo.svg"
+                alt="git hub logo"
+              />
+            </a>
+          </li>
+
+          <li class="footer__social_link">
+            <a href="https://twitter.com" target="_blank">
+              <img
+                class="footer__twitter"
+                width="24"
+                height="20"
+                src="./images/twitter_logo.svg"
+                alt="twitter logo"
+              />
+            </a>
+          </li>
+
+          <li class="footer__social_link">
+            <a href="https://linkedin.com" target="_blank">
+              <img
+                class="footer__linkedin"
+                width="24"
+                height="24"
+                src="./images/linked_in_logo.svg"
+                alt="linked in logo"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

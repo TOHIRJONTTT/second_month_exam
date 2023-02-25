@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="header__logo" href="#">
+          <img
+            style="display: block"
+            width="60"
+            height="32"
+            src="./images/header_logo.svg"
+            alt="Logo image"
+        /></a>
+
+        <button class="header__button">
+          <img
+            src="./images/hamburger.png"
+            width="24"
+            height="13"
+            alt="Hamburger image"
+          />
+        </button>
+
+        <ul class="header__nav">
+          <li class="header__nav_link"><a href="#" target="_self">home</a></li>
+          <li class="header__nav_link">
+            <a href="./portfolio.html" target="_blank">portfolio</a>
+          </li>
+          <li class="header__nav_link">
+            <a href="#footer" target="_self">contact me</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="introduction">
+        <div class="container">
+          <div class="introduction__background">
+            <img
+              width="311"
+              height="271"
+              class="introduction__mobile_image"
+              src="./images/mobile_intro.jpg"
+              alt="image here!"
+            />
+            <div class="introduction__description">
+              <h1>Design System</h1>
+              <h2 class="introduction__heading">
+                Hey, I’m Alex Spencer and I love building beautiful websites
+              </h2>
+
+              <a class="introduction__link" href="#about_me" target="_self">
+                <button class="introduction__button">
+                  <div class="introduction__button_img">
+                    <img
+                      style="display: block"
+                      width="16"
+                      height="12"
+                      src="./images/button_shape.svg"
+                      alt="button shape"
+                    />
+                  </div>
+                  <div class="introduction__button_text">
+                    <span>about me</span>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about_me" class="about">
+        <div class="container">
+          <picture class="about__pictures">
+            <source
+              class="about__pictures_tablet"
+              media="(max-width:768px), (min-width:376px)"
+              srcset="./images/about_img_tablet.jpg"
+            />
+            <source
+              media="(max-width:375px)"
+              srcset="./images/about_img_mobile.jpg"
+              style="width: 311; height: 346"
+            />
+            <img
+              src="./images/about_img_desktop.jpg"
+              alt="A man"
+              width="540"
+              height="600"
+            />
+          </picture>
+          <div class="about__description">
+            <h2 class="about__description_heading">About Me</h2>
+            <p class="about__description_text">
+              I’m a junior front-end developer looking for a new role in an
+              exciting company. I focus on writing accessible HTML, using modern
+              CSS practices and writing clean JavaScript. When writing
+              JavaScript code, I mostly use React, but I can adapt to whatever
+              tools are required. I’m based in London, UK, but I’m happy working
+              remotely and have experience in remote teams. When I’m not coding,
+              you’ll find me outdoors. I love being out in nature whether that’s
+              going for a walk, run or cycling. I’d love you to check out my
+              work.
+            </p>
+            <a
+              class="about__description_link"
+              href="./portfolio.html"
+              target="_blank"
+            >
+              <button class="about__description_btn">go to portfolio</button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="interested">
+        <div class="container">
+          <div class="interested__heading_wrapper">
+            <h2 class="interested__heading">
+              Interested in doing a project together?
+            </h2>
+          </div>
+
+          <div class="interested__line"></div>
+          <a class="interested__link" href="#footer">
+            <button class="interested_btn">contact me</button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer__nav">
+          <a class="footer__nav_logo" href="#"
+            ><img
+              style="display: block"
+              width="61"
+              height="32"
+              src="./images/footer_logo.svg"
+              alt="footer logo"
+          /></a>
+          <ul class="footer__nav_list">
+            <li class="footer__nav_link">
+              <a href="#" target="_self">home</a>
+            </li>
+            <li class="footer__nav_link">
+              <a href="./portfolio.html" target="_blank">portfolio</a>
+            </li>
+            <li class="footer__nav_link">
+              <a href="#footer" target="_self">contact me</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer__social">
+          <li class="footer__social_link">
+            <a href="https://github.com" target="_blank">
+              <img
+                class="footer__github"
+                width="25"
+                height="24"
+                src="./images/github_logo.svg"
+                alt="git hub logo"
+              />
+            </a>
+          </li>
+
+          <li class="footer__social_link">
+            <a href="https://twitter.com" target="_blank">
+              <img
+                class="footer__twitter"
+                width="24"
+                height="20"
+                src="./images/twitter_logo.svg"
+                alt="twitter logo"
+              />
+            </a>
+          </li>
+
+          <li class="footer__social_link">
+            <a href="https://linkedin.com" target="_blank">
+              <img
+                class="footer__linkedin"
+                width="24"
+                height="24"
+                src="./images/linked_in_logo.svg"
+                alt="linked in logo"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

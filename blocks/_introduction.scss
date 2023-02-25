@@ -1,0 +1,137 @@
+.introduction {
+  .container {
+    .introduction__background {
+      background-image: url(../images/intro_bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 243px;
+
+      .introduction__mobile_image {
+        display: none;
+      }
+
+      h1 {
+        visibility: hidden;
+      }
+
+      .introduction__description {
+        max-width: 445px;
+        background-color: #fafafa;
+
+        .introduction__heading {
+          font-family: "Ibarra Real Nova";
+          font-weight: 700;
+          font-size: 50px;
+          line-height: 50px;
+          letter-spacing: -0.446429px;
+          color: #33323d;
+          padding-top: 56px;
+          padding-right: 55px;
+          margin-bottom: 53px;
+        }
+
+        .introduction__link {
+          text-decoration: none;
+          display: block;
+          .introduction__button {
+            display: flex;
+            border: none;
+            background-color: #203a4c;
+  
+            .introduction__button_img {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                padding: 18px 16px;
+                background-color: rgba(0, 0, 0, 0.1);
+                display: block;
+              }
+            }
+  
+            .introduction__button_text {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+  
+              span {
+                background-color: #203a4c;
+                padding: 17px 36.8px;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+
+        .introduction__link .introduction__button:hover {
+          background-color: #5fb4a2;
+
+          span {
+            background-color: #5fb4a2;
+          }
+        }
+
+        
+
+       
+      }
+    }
+  }
+
+  margin-bottom: 150px;
+}
+
+// media queries styles
+@include tablet {
+  .introduction {
+    margin-bottom: 96px;
+    .container {
+      .introduction__background {
+        background-image: url(../images/tablet_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 322px;
+
+        .introduction__description {
+          max-width: 512px;
+
+          .introduction__heading {
+            font-size: 40px;
+            line-height: 42px;
+            padding-top: 56px;
+            padding-right: 56px;
+            margin-bottom: 48px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .introduction {
+    margin-bottom: 96px;
+    .container {
+      .introduction__background {
+        background: none;
+        padding-top: 0;
+
+        .introduction__mobile_image {
+          display: block;
+          margin-bottom: 24px;
+        }
+
+        .introduction__description {
+          .introduction__heading {
+            padding: 0;
+            margin-bottom: 32px;
+          }
+        }
+      }
+    }
+  }
+}
